@@ -1,0 +1,12 @@
+.buttonsPanelContainer {
+    width: 100%;
+
+}
+
+.buttonsPanelContainer > div {
+    display: flex;
+    flex-direction: row;
+    
+
+    margin: 0.5rem;
+}

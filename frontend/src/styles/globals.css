@@ -1,0 +1,38 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --orange:#F5923E;
+  --title: #2E384D;
+  --text: #666666;
+  --background: #F2F3F5;
+  --purple: #B3B9FF;
+  --backgroundCalculator: #E6E6E6;
+  --screenCalculator: #C4C5CC;
+  --numbersCalculator: #FAFAFA;
+  --operatorsCalculator: #00B7BF;
+}
+
+body {
+  background: var(--background);
+  color: var(--text);
+}
+
+body, input, textarea, button {
+  padding: 0;
+  margin: 0;
+  font: 400 1rem 'Poppins', sans-serif;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+button {
+  cursor: pointer;
+}
+
