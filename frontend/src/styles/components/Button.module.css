@@ -1,9 +1,24 @@
-.buttonCalculator{
+.buttonCalculator {
     width: 25%;
     height: 10vh;
     margin: 0.5rem;
-
-    background: var(--numbersCalculator);
     border: none;
     border-radius: 5px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    background: var(--numbersCalculator);
+    font-size: 3rem; 
+}
+
+.buttonCalculator:last-child{
+    width: 45%;
+
+    background: var(--operatorsCalculator);
+}
+
+.buttonCalculator:hover{
+    filter: brightness(0.9);
 }

@@ -4,7 +4,7 @@ export function ScreenCalculator() {
     return (
         <div className={styles.screenContainer}>
             <div>
-                <h1>0</h1>
+                <span>0000000000000</span>
             </div>
         </div>
     )

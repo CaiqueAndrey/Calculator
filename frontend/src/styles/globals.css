@@ -5,7 +5,7 @@
 }
 
 :root {
-  --orange:#F5923E;
+  --blue:#00BCD3;
   --title: #2E384D;
   --text: #666666;
   --background: #F2F3F5;
@@ -13,7 +13,7 @@
   --backgroundCalculator: #E6E6E6;
   --screenCalculator: #C4C5CC;
   --numbersCalculator: #FAFAFA;
-  --operatorsCalculator: #00B7BF;
+  --operatorsCalculator: #00A2D6;
 }
 
 body {
@@ -22,8 +22,6 @@ body {
 }
 
 body, input, textarea, button {
-  padding: 0;
-  margin: 0;
   font: 400 1rem 'Poppins', sans-serif;
 }
 
