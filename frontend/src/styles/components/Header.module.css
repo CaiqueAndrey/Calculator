@@ -20,5 +20,16 @@
 .headerContainer img{
     width: 2rem;
     height: 2rem;
+}
 
+@media(max-width:720px){
+    .headerContainer strong {
+        font-size: 2rem;
+        margin-left: 0.5rem;
+    }
+
+    .headerContainer img{
+        width: 1.8rem;
+        height: 1.8rem;
+    }
 }

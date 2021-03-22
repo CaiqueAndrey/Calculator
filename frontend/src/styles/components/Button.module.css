@@ -22,3 +22,10 @@
 .buttonCalculator:hover{
     filter: brightness(0.9);
 }
+
+
+@media(max-width: 720px){
+    .buttonCalculator{
+        font-size: 2rem;
+    }
+}
