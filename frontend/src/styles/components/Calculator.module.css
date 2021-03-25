@@ -5,10 +5,12 @@
 
     border: 4px solid var(--screenCalculator);
     border-radius: 10px;
-    margin: 1.5rem;
+    margin: 1rem;
     background: var(--backgroundCalculator);
 }
 
-@media(max-width: 720px){
-    
+@media screen and (max-width: 1400px){
+    .calculatorContainer{
+        margin: 0.5rem;
+    }
 }

@@ -15,7 +15,7 @@
 @media(max-width:720px){
     .container section {
         display: grid;
-        grid-template-columns: 1fr;
+        grid-template-columns: 100%;
         gap: 1.25rem;
     }
 }
