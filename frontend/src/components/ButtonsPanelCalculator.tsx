@@ -1,39 +1,34 @@
+import { useContext } from 'react';
+import { CalculatorContext } from '../contexts/CalculatorContext';
 import styles from '../styles/components/ButtonsPanelCalculator.module.css';
-import { Button } from './Button';
 
 export function ButtonsPanelCalculator() {
+//  https://jsfiddle.net/ayoisaiah/v7usehxw/27/
+    const { actions } = useContext(CalculatorContext);
+
     return (
         <div className={styles.buttonsPanelContainer}>
-            <div>
-                <Button value={'AC'} />
-                <Button value={'+/-'}/>
-                <Button value={'%'}/>
-                <Button value={'/'}/>
-            </div>
-            <div>
-                <Button value={'7'}/>
-                <Button value={'8'}/>
-                <Button value={'9'}/>
-                <Button value={'*'}/>
-            </div>
-            <div>
-                <Button value={'4'}/>
-                <Button value={'5'}/>
-                <Button value={'6'}/>
-                <Button value={'-'}/>
-            </div>
-            <div>
-                <Button value={'1'}/>
-                <Button value={'2'}/>
-                <Button value={'3'}/>
-                <Button value={'+'}/>
-            </div>
-            <div>
-                <Button value={'0'}/>
-                <Button value={'.'}/>
-                <Button value={'='}/>
+            <button className={styles.btOperator} onClick={()=>actions("+")}>+</button>
+            <button className={styles.btOperator} onClick={()=>actions("-")}>-</button>
+            <button className={styles.btOperator} onClick={()=>actions("*")}>&times;</button>
+            <button className={styles.btOperator} onClick={()=>actions("/")}>&divide;</button>
+    
+            <button className={styles.btStandard} onClick={()=>actions("7")}>7</button>
+            <button className={styles.btStandard} onClick={()=>actions("8")}>8</button>
+            <button className={styles.btStandard} onClick={()=>actions("9")}>9</button>
 
-            </div>
+            <button className={styles.btStandard} onClick={()=>actions("4")}>4</button>
+            <button className={styles.btStandard} onClick={()=>actions("5")}>5</button>
+            <button className={styles.btStandard} onClick={()=>actions("6")}>6</button>
+        
+            <button className={styles.btStandard} onClick={()=>actions("1")}>1</button>
+            <button className={styles.btStandard} onClick={()=>actions("2")}>2</button>
+            <button className={styles.btStandard} onClick={()=>actions("3")}>3</button>
+        
+            <button className={styles.btStandard} onClick={()=>actions("0")}>0</button>
+            <button className={styles.btStandard} onClick={()=>actions(".")}>.</button>
+            <button className={styles.btAllClear} onClick={()=>actions("all-clear")}>AC</button>
+            <button className={styles.btEqual} onClick={()=>actions("=")}>=</button>
         </div>
     );
 }

@@ -1,9 +1,0 @@
-.buttonCalculator{
-    width: 25%;
-    height: 10vh;
-    margin: 0.5rem;
-
-    background: var(--numbersCalculator);
-    border: none;
-    border-radius: 5px;
-}
