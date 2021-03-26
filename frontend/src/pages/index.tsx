@@ -1,14 +1,16 @@
 import Head from 'next/head';
+import GlobalStyle from '../styles/globals';
 import { Calculator } from '../components/Calculator';
 import { Header } from '../components/Header';
 import { CalculatorProvider } from '../contexts/CalculatorContext';
-import styles from '../styles/pages/Home.module.css';
+import { Div } from '../styles/pages/Home';
 
 
 export default function Home() {
   return (
     <CalculatorProvider>
-      <div className={styles.container}>
+      <GlobalStyle />
+      <Div>
         <Head>
           <title>Calculator-React</title>
         </Head>
@@ -18,7 +20,7 @@ export default function Home() {
         <section>
           <Calculator/>
         </section>
-      </div>
+      </Div>
     </CalculatorProvider>
   )
 }

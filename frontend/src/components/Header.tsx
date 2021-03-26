@@ -1,12 +1,12 @@
-import styles from '../styles/components/Header.module.css';
+import { Div } from '../styles/components/Header';
 
 export function Header() {
     return (
-        <header className={styles.headerContainer}>
+        <Div>
             <span>
                 <img src="img/calculator.svg" alt="calculator" />
                 <strong>Calculator</strong>
             </span>
-        </header>
+        </Div>
     );
 }
