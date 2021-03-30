@@ -29,7 +29,8 @@ export const ButtonStandard = styled.button`
     align-items: center;
     justify-content: center;
 
-    background: var(--numbersCalculator);
+    background: ${props => props.theme.colors.btStandardCalculator};
+    color: ${props => props.theme.colors.text};
     font-size: 3rem; 
 
     @media only screen 
@@ -56,7 +57,8 @@ export const ButtonOperator = styled.button`
     align-items: center;
     justify-content: center;
 
-    background: var(--blueGreenLight);
+    background: ${props => props.theme.colors.btOperatorCalculator};
+    color: ${props => props.theme.colors.text};
     font-size: 3rem;
 
     @media only screen 
@@ -83,7 +85,8 @@ export const ButtonEqual = styled.button`
     align-items: center;
     justify-content: center;
 
-    background:var(--blueGrottoLight);
+    background: ${props => props.theme.colors.btEqualCalculator};
+    color: ${props => props.theme.colors.text};
     font-size: 3rem; 
     grid-area: 2 / 4 / 6 / 5;
 
@@ -111,7 +114,8 @@ export const ButtonAllClear = styled.button`
     align-items: center;
     justify-content: center;
 
-    background:var(--redLight);
+    background: ${props => props.theme.colors.btACCalculator};
+    color: ${props => props.theme.colors.text};
     font-size: 3rem;
 
     @media only screen 

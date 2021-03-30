@@ -5,7 +5,7 @@ export const Div = styled.div`
     display: flex;
     flex-direction: column;
 
-    .section {
+    section {
         flex: 1;
 
         display: grid;
@@ -14,7 +14,7 @@ export const Div = styled.div`
     }
 
     @media(max-width:720px){
-        .section {
+        section {
             display: grid;
             grid-template-columns: 100%;
             gap: 1.25rem;

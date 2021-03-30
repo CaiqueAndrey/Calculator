@@ -8,25 +8,12 @@ export default createGlobalStyle`
   }
 
   :root {
-    --blue:#00BCD3;
     --title: #2E384D;
-    --text: #666666;
-    --background: #F2F3F5;
-    --orange: #EDA654;
-    --backgroundCalculator: #E6E6E6;
-    --screenCalculator: #C4C5CC;
-    --numbersCalculator: #FAFAFA;
-
-    --bbBlueLight: #D4F1F4;
-    --blueGreenLight: #75E6DA;
-    --blueGrottoLight:#189AB4;
-    --navyBlueLight: #05445E;
-    --redLight: #E41A18;
   }
 
   body {
-    background: var(--background);
-    color: var(--text);
+    background: ${props => props.theme.colors.background};
+    color: ${props => props.theme.colors.text};
   }
 
   body, input, textarea, button {

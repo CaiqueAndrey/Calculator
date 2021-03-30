@@ -2,15 +2,17 @@ export default {
   title: 'light',
 
   colors: {
-    background: '#F2F3F5',
-    header:'#00BCD3',
-    text: '#666666',
+    background: '#F2FAFE',
+    header:'#62BFED',
+    switchHeader:'#62BFED',
+    text: '#000',
 
     calculator: '#E6E6E6',
     screenCalculator: '#C4C5CC',
     btStandardCalculator: '#FAFAFA',
-    btOperatorCalculator:'#75E6DA',
-    btEqualCalculator:'#189AB4',
-    btACCalculator:'#E41A18'
+    btOperatorCalculator:'#8FB8ED',
+    btEqualCalculator:'#3590F3',
+    btACCalculator:'#F03A47'
+  
   },
 };

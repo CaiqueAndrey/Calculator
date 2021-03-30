@@ -5,10 +5,10 @@ export const Div = styled.div`
     align-items: center;
     flex-direction: column;
 
-    border: 4px solid var(--screenCalculator);
+    border: 4px solid ${props => props.theme.colors.screenCalculator};
     border-radius: 10px;
     margin: 1rem;
-    background: var(--backgroundCalculator);
+    background: ${props => props.theme.colors.calculator};
 
     @media screen and (max-width: 1400px){
         margin: 0.5rem;
