@@ -1,6 +1,6 @@
 import { useContext, useEffect } from 'react';
 import { CalculatorContext } from '../contexts/CalculatorContext';
-import styles from '../styles/components/ScreenCalculator.module.css';
+import { Div } from '../styles/components/ScreenCalculator';
 
 export function ScreenCalculator() {
     const { displayValue } = useContext(CalculatorContext);
@@ -11,8 +11,8 @@ export function ScreenCalculator() {
     },[displayValue]);
 
     return (
-        <div className={styles.screenContainer}>
-            <input type="text" className={styles.screenInput} value={displayValue} disabled />
-        </div>
+        <Div>
+            <input type="text" value={displayValue} disabled />
+        </Div>
     )
 }
