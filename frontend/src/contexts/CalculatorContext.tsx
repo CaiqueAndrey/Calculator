@@ -6,6 +6,8 @@ interface CalculatorContextData {
     hasSecondOperand: boolean;
     operator: string;
     actions: (valueButton: string) => void;
+    history: Array<string>;
+    resetHistory: () => void;
 }
 
 interface CalculatorProviderProps {
@@ -19,6 +21,7 @@ export function CalculatorProvider({children}: CalculatorProviderProps) {
     const [firstOperand, setFirstOperand] = useState(null);
     const [hasSecondOperand, setHasSecondOperand] = useState(false);
     const [operator, setOperator] = useState(null);
+    const [history, setHistory] = useState([]);
 
     function inputDigit(digit: string) {
         if (hasSecondOperand === true) {
@@ -54,13 +57,15 @@ export function CalculatorProvider({children}: CalculatorProviderProps) {
             setFirstOperand(inputValue);
         } else if (operator) {
             const result = calculate(firstOperand, inputValue, operator);
-
+            
             setDisplayValue(`${parseFloat(result.toFixed(7))}`);
             setFirstOperand(result);
+            saveHistory(firstOperand, inputValue, operator, result);
         }
 
         setHasSecondOperand(true);
         setOperator(nextOperator);
+        
     }
 
     function calculate(firstOperand: number, secondOperand: number, operator: string) {
@@ -77,12 +82,22 @@ export function CalculatorProvider({children}: CalculatorProviderProps) {
         return secondOperand;
     }
 
+    function saveHistory(firstOperand: number, secondOperand: number, operator: string, result:number) {
+        let item = `${firstOperand} ${operator} ${secondOperand} ${'='} ${result}`;
+        setHistory(()=>history.concat(item));
+    }
+
+    function resetHistory() {
+        setHistory([]);
+    }
+
     function resetCalculator() {
         setDisplayValue("0");
         setFirstOperand(null);
         setHasSecondOperand(false);
         setOperator(null);
     }
+
 
     function actions(valueButton: string){
         switch (valueButton) {
@@ -112,7 +127,9 @@ export function CalculatorProvider({children}: CalculatorProviderProps) {
             firstOperand,
             hasSecondOperand,
             operator,
-            actions
+            actions,
+            history,
+            resetHistory
         }}>
             {children}
         </CalculatorContext.Provider>

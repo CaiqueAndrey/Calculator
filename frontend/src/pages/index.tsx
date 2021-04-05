@@ -24,7 +24,7 @@ export default function Home() {
         <GlobalStyle />
         <Div>
           <Head>
-            <title>Calculator-React</title>
+            <title>Calculadora</title>
           </Head>
 
           <Header toggleTheme={toggleTheme} />

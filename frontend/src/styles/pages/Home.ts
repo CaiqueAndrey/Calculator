@@ -1,7 +1,7 @@
 import styled from 'styled-components';
 
 export const Div = styled.div`
-    min-height: 100vh;
+    height: 100vh;
     display: flex;
     flex-direction: column;
 
@@ -10,7 +10,8 @@ export const Div = styled.div`
 
         display: grid;
         grid-template-columns: 1fr 1fr;
-        gap: 6.25rem;
+        grid-template-rows: 1fr;
+        gap: 2.25rem;
     }
 
     @media(max-width:720px){

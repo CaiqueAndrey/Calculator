@@ -12,7 +12,7 @@ export const ButtonsPanel = styled.div`
         filter: brightness(0.9);
     }
 
-    @media screen and (max-width: 1400px){
+    @media (min-width: 1300px){
         grid-gap: 0;
         padding: 0;
     }

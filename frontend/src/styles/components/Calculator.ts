@@ -1,6 +1,8 @@
 import styled from 'styled-components';
 
 export const Div = styled.div`
+    height: 750px;
+
     display: flex;
     align-items: center;
     flex-direction: column;
@@ -11,6 +13,11 @@ export const Div = styled.div`
     background: ${props => props.theme.colors.calculator};
 
     @media screen and (max-width: 1400px){
+        height: 510px;
         margin: 0.5rem;
+    }
+
+    @media screen and (max-width:720px){
+        height: 400px;
     }
 `;

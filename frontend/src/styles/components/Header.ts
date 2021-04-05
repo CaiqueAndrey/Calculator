@@ -18,20 +18,20 @@ export const Div = styled.div`
         margin-left: 1rem;
     }
 
-    img{
+    svg{
         width: 2rem;
         height: 2rem;
+        color: ${props => props.theme.colors.text};
     }
 
     @media screen and (max-width:720px){
         strong {
-            font-size: 2rem;
+            font-size: 1rem;
             margin-left: 0.5rem;
         }
 
-        img{
-            width: 1.8rem;
-            height: 1.8rem;
+        svg{
+           display: none;
         }
     }
 
@@ -41,7 +41,7 @@ export const Div = styled.div`
             margin-left: 0.5rem;
         }
 
-        img{
+        svg{
             width: 2rem;
             height: 2rem;
         }
