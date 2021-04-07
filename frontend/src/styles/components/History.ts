@@ -16,7 +16,6 @@ export const DivHistory = styled.div`
         height: 510px;
         margin: 0.5rem;
     }
-
 `;
 
 export const HeaderHistory = styled.header`
@@ -59,9 +58,6 @@ export const HeaderHistory = styled.header`
         fill: ${props=> props.theme.colors.btACCalculator};
         cursor: pointer;
     }
-
-    
-
     
 `;
 
@@ -86,6 +82,10 @@ export const ListHistory = styled.div`
         
         display: flex;
         flex-direction:column-reverse;
+
+        p {
+            font-size: 1.5rem;
+        }
     }
 
     li {

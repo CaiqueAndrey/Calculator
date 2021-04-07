@@ -24,26 +24,33 @@ export const Div = styled.div`
         color: ${props => props.theme.colors.text};
     }
 
-    @media screen and (max-width:720px){
-        strong {
-            font-size: 1rem;
-            margin-left: 0.5rem;
-        }
-
-        svg{
-           display: none;
+    
+    @media screen and (max-width:1400px){
+        span {
+            strong {
+                font-size: 2.5rem;
+                margin-left: 0.5rem;
+            }
+    
+            svg{
+                width: 2rem;
+                height: 2rem;
+            }
         }
     }
 
-    @media screen and (max-width:1400px){
-        strong {
-            font-size: 2.5rem;
-            margin-left: 0.5rem;
-        }
+    @media screen and (max-width:768px){
+        span {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
 
-        svg{
-            width: 2rem;
-            height: 2rem;
+            strong {
+                font-size: 1.5rem;
+                margin-left: 1rem;
+            }
+            
         }
+        
     }
 `;

@@ -12,7 +12,7 @@ export const ButtonsPanel = styled.div`
         filter: brightness(0.9);
     }
 
-    @media (min-width: 1300px){
+    @media (max-width: 1400px){
         grid-gap: 0;
         padding: 0;
     }
@@ -33,16 +33,16 @@ export const ButtonStandard = styled.button`
     color: ${props => props.theme.colors.text};
     font-size: 3rem; 
 
+    @media screen and (max-width: 768px){
+        width: 6rem;
+        font-size: 2rem;
+    }
+
     @media only screen 
     and (min-device-width: 320px) 
     and (max-device-width: 568px)
     and (-webkit-min-device-pixel-ratio: 2) {
-        width: 4rem;
-    }
-
-    @media screen and (max-width: 720px){
         width: 5rem;
-        font-size: 2rem;
     }
 `;
 
@@ -61,16 +61,16 @@ export const ButtonOperator = styled.button`
     color: ${props => props.theme.colors.text};
     font-size: 3rem;
 
+    @media screen and (max-width: 768px){
+        width: 5rem;
+        font-size: 2rem;
+    }
+
     @media only screen 
     and (min-device-width: 320px) 
     and (max-device-width: 568px)
     and (-webkit-min-device-pixel-ratio: 2) {
-        width: 4rem;
-    }
-
-    @media screen and (max-width: 720px){
         width: 5rem;
-        font-size: 2rem;
     }
 `;
 
@@ -90,16 +90,16 @@ export const ButtonEqual = styled.button`
     font-size: 3rem; 
     grid-area: 2 / 4 / 6 / 5;
 
+    @media screen and (max-width: 768px){
+        width: 5rem;
+        font-size: 2rem;
+    }
+
     @media only screen 
     and (min-device-width: 320px) 
     and (max-device-width: 568px)
     and (-webkit-min-device-pixel-ratio: 2) {
-        width: 4rem;
-    }
-
-    @media screen and (max-width: 720px){
         width: 5rem;
-        font-size: 2rem;
     }
 `;
 
@@ -118,16 +118,16 @@ export const ButtonAllClear = styled.button`
     color: ${props => props.theme.colors.text};
     font-size: 3rem;
 
+    @media screen and (max-width: 768px){
+        width: 5rem;
+        font-size: 2rem;
+    }
+
     @media only screen 
     and (min-device-width: 320px) 
     and (max-device-width: 568px)
     and (-webkit-min-device-pixel-ratio: 2) {
-        width: 4rem;
-    }
-
-    @media screen and (max-width: 720px){
         width: 5rem;
-        font-size: 2rem;
     }
 
 `;

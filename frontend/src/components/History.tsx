@@ -31,6 +31,7 @@ export function History (){
                 </HeaderHistory>
                 <ListHistory>
                     <ul>
+                    { history.length === 0 && <p>Histórico vazio</p> }
                         {
                             history.map((operation, i)=>{
                                 return (
