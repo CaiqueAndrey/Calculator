@@ -12,12 +12,14 @@ export const Div = styled.div`
     margin: 1rem;
     background: ${props => props.theme.colors.calculator};
 
+    
     @media screen and (max-width: 1400px){
         height: 510px;
         margin: 0.5rem;
     }
 
-    @media screen and (max-width:720px){
-        height: 400px;
+    @media screen and (max-width: 768px){
+        height: 97%;
     }
+
 `;

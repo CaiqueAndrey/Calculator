@@ -27,7 +27,7 @@ export const Div = styled.div`
     }
 
 
-    @media screen and (max-width: 720px){
+    @media screen and (max-width: 768px){
         input{
             font-size: 3rem;
         }

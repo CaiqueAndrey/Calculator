@@ -14,10 +14,10 @@ export const Div = styled.div`
         gap: 2.25rem;
     }
 
-    @media(max-width:720px){
+    @media(max-width:768px){
         section {
             display: grid;
-            grid-template-columns: 100%;
+            grid-template-columns: 1fr;
             gap: 1.25rem;
         }
     }
