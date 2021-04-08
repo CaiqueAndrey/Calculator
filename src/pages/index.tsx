@@ -28,7 +28,7 @@ export default function Home(props: HomeProps) {
         <GlobalStyle />
         <Div>
           <Head>
-            <title>Calculadora</title>
+            <title>Calculator</title>
           </Head>
 
           <Header toggleTheme={toggleTheme} />
@@ -45,6 +45,14 @@ export default function Home(props: HomeProps) {
 
 export const getServerSideProps: GetServerSideProps = async (ctx) => {
   const { theme } = ctx.req.cookies;
+
+  if(!theme){
+    return {
+      props: { 
+        theme: light
+      }
+    };
+  }
 
   return {
     props: { 
