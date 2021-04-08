@@ -60,7 +60,9 @@ export function CalculatorProvider({children}: CalculatorProviderProps) {
             
             setDisplayValue(`${parseFloat(result.toFixed(7))}`);
             setFirstOperand(result);
-            saveHistory(firstOperand, inputValue, operator, result);
+            
+            if(operator !== '=')
+                saveHistory(firstOperand, inputValue, operator, result);
         }
 
         setHasSecondOperand(true);
@@ -78,7 +80,7 @@ export function CalculatorProvider({children}: CalculatorProviderProps) {
         } else if (operator === '/') {
             return firstOperand / secondOperand;
         }
-
+        
         return secondOperand;
     }
 
